@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "watasu",
+  "description": "Official Watasu agent plugins",
+  "owner": {
+    "name": "Watasu LTD",
+    "email": "info@watasu.io"
+  },
+  "plugins": [
+    {
+      "name": "watasu",
+      "description": "Deploy, automate, and troubleshoot Watasu apps and sandboxes",
+      "source": "./plugins/watasu",
+      "version": "1.0.0",
+      "author": {
+        "name": "Watasu LTD",
+        "email": "info@watasu.io"
+      },
+      "homepage": "https://docs.watasu.io",
+      "repository": "https://github.com/watasuio/plugins",
+      "category": "development",
+      "tags": [
+        "watasu",
+        "deployment",
+        "sandboxes",
+        "observability",
+        "mcp"
+      ],
+      "strict": true
+    }
+  ]
+}

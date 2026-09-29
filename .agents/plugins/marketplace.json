@@ -1,0 +1,20 @@
+{
+  "name": "watasu",
+  "interface": {
+    "displayName": "Watasu"
+  },
+  "plugins": [
+    {
+      "name": "watasu",
+      "source": {
+        "source": "local",
+        "path": "./plugins/watasu"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

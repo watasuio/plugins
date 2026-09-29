@@ -1,0 +1,21 @@
+{
+  "name": "watasu",
+  "version": "1.0.0",
+  "description": "Deploy, automate, and troubleshoot Watasu apps and sandboxes",
+  "author": {
+    "name": "Watasu LTD",
+    "email": "info@watasu.io",
+    "url": "https://watasu.io"
+  },
+  "homepage": "https://docs.watasu.io",
+  "repository": "https://github.com/watasuio/plugins",
+  "keywords": [
+    "watasu",
+    "deployment",
+    "sandboxes",
+    "observability",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
