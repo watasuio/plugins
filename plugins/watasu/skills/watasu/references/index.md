@@ -31,6 +31,7 @@ an agent can load only the context it needs.
 
 ## Data, access, and operations
 
+- [Qdrant native search](qdrant.md)
 - [PostgreSQL, connections, and followers](postgresql.md)
 - [Valkey and ClickHouse](valkey-and-clickhouse.md)
 - [Redpanda and object storage](streaming-and-object-storage.md)

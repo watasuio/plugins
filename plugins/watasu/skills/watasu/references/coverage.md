@@ -31,6 +31,7 @@ when maintaining executable examples; users need no platform source checkout.
 | [Add-ons](https://docs.watasu.io/addons/overview/) | [addons and data](addons-and-data.md) |
 | [PostgreSQL](https://docs.watasu.io/addons/postgresql/) | [postgresql](postgresql.md) |
 | [Valkey](https://docs.watasu.io/addons/valkey/) | [valkey and clickhouse](valkey-and-clickhouse.md) |
+| [Qdrant](https://docs.watasu.io/addons/qdrant/) | [qdrant](qdrant.md) |
 | [ClickHouse](https://docs.watasu.io/addons/clickhouse/) | [valkey and clickhouse](valkey-and-clickhouse.md) |
 | [Redpanda](https://docs.watasu.io/addons/redpanda/) | [streaming and object storage](streaming-and-object-storage.md) |
 | [Object storage](https://docs.watasu.io/addons/object-storage/) | [streaming and object storage](streaming-and-object-storage.md) |

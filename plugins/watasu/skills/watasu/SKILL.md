@@ -42,6 +42,7 @@ track when the user is learning the platform; use the task map for focused work.
 - Setup or access failure: [authentication](references/authentication.md),
   [permissions](references/teams-access-and-billing.md), and
   [API errors](references/api-errors.md).
+- Qdrant vector search: [native clients, sizing, and recovery](references/qdrant.md).
 - Data services: [PostgreSQL](references/postgresql.md),
   [Valkey and ClickHouse](references/valkey-and-clickhouse.md),
   [Redpanda and object storage](references/streaming-and-object-storage.md), or

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0
+
+- Add managed Qdrant plans, native REST/gRPC connections, observed replication,
+  capacity changes, backups and replacement restores to the customer handbook.
+- Document the add-on settings update command and Qdrant attachment variables.
+
 ## 1.0.0
 
 - Publish the customer handbook and read-only MCP connection for Claude Code

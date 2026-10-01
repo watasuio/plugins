@@ -102,3 +102,5 @@ Product posts can age. Verify current docs before repeating flags, prices,
 limits, regions, package versions, or availability from a dated post.
 
 [Handbook](index.md)
+
+- [Qdrant managed service](https://docs.watasu.io/addons/qdrant/)

@@ -13,6 +13,8 @@ Customer-facing stateful services include:
 | Object Storage | S3-compatible objects | Alias-derived object-storage variables |
 | Logs, Metrics, Traces | Observability ingestion and exploration | Service-specific variables |
 
+Qdrant is an managed service; read [native search](qdrant.md) before proposing it.
+
 Always inspect the current add-on catalog for available plans and regions.
 Add-ons are team-owned resources with app attachments. Detaching or deleting an
 ordinary app does not imply the add-on or its billing disappears. Inspect all
