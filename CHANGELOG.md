@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0
+
+- Add hosted MCP write-tool workflows using the existing `read` and `write` scopes.
+- Cover app, configuration, access, domain, add-on, backup, observability, terminal, and sandbox command tools.
+- Document stream ownership and expiry, sensitive results, OAuth consent, and current protocol compatibility.
+- Keep client-local credentials, Git operations, and interactive SSH on their supported surfaces.
+
 ## 1.1.0
 
 - Add managed Qdrant plans, native REST/gRPC connections, observed replication,

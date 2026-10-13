@@ -2,7 +2,7 @@
 name: watasu
 description: >-
   Operate Watasu from the customer side: deploy and configure apps, use the CLI
-  and read-only MCP server, manage processes, domains, private networking,
+  and permission-scoped MCP server, manage processes, domains, private networking,
   add-ons, backups, observability, GitHub deployments, pipelines, review apps,
   teams and access, and create or automate AI sandboxes through the REST API and
   official SDKs. Use whenever a task mentions Watasu, watasu.io,
@@ -30,8 +30,9 @@ track when the user is learning the platform; use the task map for focused work.
 1. Read [customer boundaries](references/customer-boundaries.md).
 2. Identify the object: team, app, build, release, process, formation, add-on,
    domain, pipeline, or sandbox.
-3. For live state, use the Watasu MCP server first when connected. It is
-   intentionally read-only. See [MCP](references/mcp.md).
+3. Use the Watasu MCP server when connected. Discover its tools and resources;
+   `read` allows inspection and `read write` adds authorized changes. See
+   [MCP](references/mcp.md).
 4. Before a mutation, establish the exact team/app/resource and whether the user
    authorized that change. Ask for confirmation before destructive operations.
 5. Use the narrowest relevant chapter below. Consult current public docs for
@@ -88,4 +89,4 @@ track when the user is learning the platform; use the task map for focused work.
   memory when the answer can affect a decision. Verify it in the live dashboard
   or current docs.
 - State what you observed separately from what you changed. MCP results are
-  evidence of live read-only state, not permission to mutate it.
+  evidence of live state. Tool availability does not replace the user’s intent.

@@ -6,22 +6,22 @@ team/app permissions are required.
 
 | Task | Supported path |
 | --- | --- |
-| Identity, teams, apps, health, builds, current release, add-on state | Read-only MCP; CLI where available |
-| Create/rename/delete apps, config, process sizes/counts, domains, trust | Watasu CLI |
+| Identity, teams, apps, health, builds, current release, add-on state | MCP resources and read tools; CLI where available |
+| Create/rename/delete apps, config, process sizes/counts, domains, trust | MCP tools with `write`; Watasu CLI |
 | Deploy the user's source | Git remote created by the CLI; connected GitHub repository |
-| Runtime logs, PromQL, TraceQL | Watasu CLI; customer Grafana for interactive exploration |
-| Add-on create/attach/detach, backups, restores, followers, database sessions | Watasu CLI |
-| Team members and app access | Watasu CLI; dashboard for invitations and pipeline roles |
+| Runtime logs, PromQL, TraceQL | MCP query/stream tools; Watasu CLI; customer Grafana for interactive exploration |
+| Add-on create/attach/detach, backups, restores, followers, database sessions | MCP tools with `write`; Watasu CLI |
+| Team members and app access | MCP tools; Watasu CLI; dashboard for pipeline roles |
 | GitHub connection, auto-deploy settings, pipelines, promotions, review-app settings | Customer dashboard; repository `app.json` for review provisioning |
 | Billing, payment methods, team creation, API keys, account security, notification preferences, integrations/webhooks | Customer dashboard |
-| Sandbox interactive development | `watasu ssh` or customer sandbox SSH |
+| Sandbox commands | MCP sandbox tools; `watasu ssh` for a local interactive terminal |
 | Sandbox lifecycle, templates, files, processes, volumes, checkpoints, previews | Public sandbox SDK/API |
 | Platform failure beyond customer diagnostics | Sanitized support report |
 
 If the user has only CLI/MCP, finish the supported inspection and prepare any
 repository changes. Explain the exact customer dashboard step the user needs to
-perform. Do not guess an undocumented API, a new CLI verb, or a write-capable MCP
-tool to fill a gap.
+perform. Discover the actual MCP tool catalog and scopes. Do not invent tools or
+undocumented API operations to fill a gap.
 
 ## Choosing apps or sandboxes
 

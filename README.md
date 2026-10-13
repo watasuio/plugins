@@ -5,7 +5,7 @@ currently contains one plugin, `watasu`, with:
 
 - a portable, cross-linked Agent Skill handbook covering customer-side Watasu
   applications, deployments, observability, debugging, and agent sandboxes;
-- the read-only Watasu MCP server at `https://mcp.watasu.io/mcp`;
+- the Watasu MCP server with read-only access and optional write tools at `https://mcp.watasu.io/mcp`;
 - manifests for Claude Code and Codex.
 
 ## Claude Code
@@ -35,12 +35,13 @@ Restart the client or start a new session after installation. Authenticate the
 Watasu MCP connection through the client's OAuth flow. Installing the plugin
 does not install or authenticate the Watasu CLI: follow the
 [CLI setup guide](https://docs.watasu.io/cli/install/), run `watasu login`, then
-`watasu whoami` before asking the agent to make changes.
+`watasu whoami` before using CLI operations. MCP tools use the separate MCP connection.
 
 The repository is public; downloading it needs no Watasu organization membership
 or private Git access. Using your resources requires your own Watasu account and
-team/app permissions. MCP supplies read-only state; authorized changes use the
-CLI. Sandbox automation additionally uses the public SDK/API. No infrastructure
+team/app permissions. MCP defaults to `read`; request `read write` through your
+client’s OAuth flow to enable authorized mutations. Existing read-only grants
+stay read-only. The CLI and public sandbox SDK/API remain available. No infrastructure
 credentials or platform source checkout are needed.
 
 Start with the [handbook](plugins/watasu/skills/watasu/references/index.md) or

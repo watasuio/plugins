@@ -17,7 +17,7 @@ secret storage at runtime, not literal command arguments or committed MCP maps.
 Treat the whole request and returned gateway token/URL as secret-bearing.
 Expose only the servers and tools required by the agent's task.
 
-This sandbox MCP gateway is different from the plugin's read-only customer-state
+This sandbox MCP gateway is different from the plugin's hosted platform-management
 [Watasu MCP server](mcp.md).
 
 ## Code Interpreter

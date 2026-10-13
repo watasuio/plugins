@@ -7,7 +7,7 @@ Operate through public Watasu surfaces:
 - customer dashboard at `https://dash.watasu.io`;
 - documentation at `https://docs.watasu.io`;
 - `watasu` CLI and Git remote;
-- read-only MCP server at `https://mcp.watasu.io/mcp`;
+- permission-scoped MCP server at `https://mcp.watasu.io/mcp`;
 - sandbox REST API and official SDKs.
 
 Do not direct customers to Kubernetes, infrastructure repositories, Rails or
