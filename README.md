@@ -8,6 +8,18 @@ currently contains one plugin, `watasu`, with:
 - the Watasu MCP server with read-only access and optional write tools at `https://mcp.watasu.io/mcp`;
 - manifests for Claude Code and Codex.
 
+## Let your agent set it up
+
+Paste this into Claude Code, Codex, Cursor, OpenCode, or Pi:
+
+```text
+Set up Watasu for me: fetch and follow this guide https://raw.githubusercontent.com/watasuio/plugins/main/INSTALL.md
+```
+
+The [setup guide](INSTALL.md) uses the native plugin in Claude Code and Codex,
+or the same complete skill handbook and a native MCP connection in Cursor,
+OpenCode, and Pi. It explains how to restart and sign in.
+
 ## Claude Code
 
 Install from the public marketplace:
@@ -31,7 +43,7 @@ codex plugin add watasu@watasu
 
 The same skill and MCP definition are used by both clients.
 
-Restart the client or start a new session after installation. Authenticate the
+Restart the client after installation. Authenticate the
 Watasu MCP connection through the client's OAuth flow. Installing the plugin
 does not install or authenticate the Watasu CLI: follow the
 [CLI setup guide](https://docs.watasu.io/cli/install/), run `watasu login`, then
