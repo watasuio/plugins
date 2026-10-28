@@ -13,12 +13,13 @@ currently contains one plugin, `watasu`, with:
 Paste this into Claude Code, Codex, Cursor, OpenCode, or Pi:
 
 ```text
-Set up Watasu for me: fetch and follow this guide https://raw.githubusercontent.com/watasuio/plugins/main/INSTALL.md
+Set up Watasu for me: fetch and follow this guide https://watasu.io/agents.md
 ```
 
-The [setup guide](INSTALL.md) uses the native plugin in Claude Code and Codex,
+The [setup guide](https://watasu.io/agents.md) uses the native plugin in Claude Code and Codex,
 or the same complete skill handbook and a native MCP connection in Cursor,
 OpenCode, and Pi. It explains how to restart and sign in.
+The guide's source is maintained in [INSTALL.md](INSTALL.md).
 
 ## Claude Code
 
