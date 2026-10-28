@@ -50,6 +50,10 @@ does not install or authenticate the Watasu CLI: follow the
 [CLI setup guide](https://docs.watasu.io/cli/install/), run `watasu login`, then
 `watasu whoami` before using CLI operations. MCP tools use the separate MCP connection.
 
+For Homebrew, install the CLI with `brew install watasuio/watasu/watasu`.
+The fully qualified name trusts only the Watasu formula; see
+[Homebrew tap trust](https://docs.brew.sh/Tap-Trust).
+
 The repository is public; downloading it needs no Watasu organization membership
 or private Git access. Using your resources requires your own Watasu account and
 team/app permissions. MCP defaults to `read`; request `read write` through your

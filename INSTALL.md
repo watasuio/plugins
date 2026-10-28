@@ -121,6 +121,16 @@ server for them. Installing or signing in to the Watasu CLI is a separate step,
 needed only when a later task calls for it. This setup does not deploy or change
 any Watasu resources.
 
+If that later task needs the CLI, Homebrew users can run:
+
+```sh
+brew install watasuio/watasu/watasu
+```
+
+This installs and trusts only the Watasu formula. For other platforms or an
+existing install that reports a trust error, follow the
+[CLI installation guide](https://docs.watasu.io/cli/install/).
+
 Official client references:
 [Claude Code](https://code.claude.com/docs/en/plugin-marketplaces),
 [Codex](https://learn.chatgpt.com/docs/developer-commands#codex-plugin),

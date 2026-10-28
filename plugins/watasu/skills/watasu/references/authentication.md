@@ -1,9 +1,14 @@
 # Setup and authentication
 
 Install the CLI using the current [installation guide](https://docs.watasu.io/cli/install/).
-Homebrew users can run `brew tap watasuio/watasu` then `brew install watasu`;
+Homebrew users can run `brew install watasuio/watasu/watasu`;
 other supported platforms have installers in that guide. Verify `watasu
 --version` and use command-specific `--help` for the installed version.
+
+The fully qualified install trusts only the Watasu formula. If an existing
+installation reports it as untrusted during an upgrade, run
+`brew trust --formula watasuio/watasu/watasu`, then
+`brew upgrade watasuio/watasu/watasu`. See [Homebrew tap trust](https://docs.brew.sh/Tap-Trust).
 
 ## Workstation
 
