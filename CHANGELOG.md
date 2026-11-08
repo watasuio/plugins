@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.4
+
+- Document positive balance admission for all add-ons, including free plans,
+  implicit Grafana, app-create and app.json provisioning, restores, and followers.
+- Clarify that an unsuspended zero balance still permits empty app creation.
+
 ## 1.2.3
 
 - Document the positive wallet balance required before sandbox creation,

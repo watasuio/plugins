@@ -111,6 +111,11 @@ for actual running time; queue time and image-only promotions are free of build
 charges. No saved card is required; Stripe top-ups start at €5. See the
 [billing guide](https://docs.watasu.io/admin/billing-and-limits/).
 
+An empty app can be created with an unsuspended zero balance. Creating or
+attaching any add-on requires a positive owning-account balance, including free
+plans and automatically added Grafana. No saved card is required. See
+[add-on prerequisites](https://docs.watasu.io/addons/overview/#balance-required).
+
 Before creating a sandbox, restoring a checkpoint into a new sandbox, or
 resuming a stopped sandbox, its billing account must have a balance greater than
 zero. No saved card is required. Sandbox runtime and storage keep their existing

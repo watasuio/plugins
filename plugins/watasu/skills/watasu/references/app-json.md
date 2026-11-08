@@ -35,6 +35,10 @@ maps Procfile process types to quantity and pod size. Plan and size identifiers
 change; select them from current docs/dashboard rather than copying a dated
 example.
 
+Provisioning declared add-ons requires a positive balance in the owning billing
+account, including free plans and implicit Grafana. The same requirement applies
+to review apps. See [add-on prerequisites](addons-and-data.md#provision-and-attach).
+
 ## Lifecycle scripts
 
 - `postdeploy`: once after the first successful deploy; keep it idempotent.

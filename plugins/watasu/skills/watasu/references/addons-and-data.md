@@ -42,6 +42,16 @@ for exact variable names. Do not print their values.
 ## Provision and attach
 
 Before creating an add-on, establish team, app, service, region, plan, and alias.
+The owning billing account must have a balance greater than zero before creating
+or attaching any add-on, including free plans and automatically added Grafana.
+Personal workspaces use the owner's personal balance; shared workspaces use the
+team's balance. No saved card is required. An empty app may be created with an
+unsuspended zero balance, but nested app-create add-ons, `app.json` provisioning,
+replacement restores and followers require funding. HTTP 402
+`addon_balance_required` means top up the owning account and retry; never switch
+to a free plan to bypass the requirement. Existing add-on pricing is unchanged.
+See [add-on balance requirements](https://docs.watasu.io/addons/overview/#balance-required).
+
 Creation can incur charges. Use current `watasu addons --help` and service docs
 for exact command forms. After attachment, deploy/release state may change as
 managed variables become available.
