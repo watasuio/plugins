@@ -6,7 +6,9 @@ an integration needs the raw HTTP/WebSocket contract.
 
 ## Before create
 
-1. Resolve the team explicitly.
+1. Resolve the team explicitly and confirm its billing account has a balance
+   greater than zero. Personal teams use the owner's personal wallet; shared
+   teams use their team wallet. No saved payment card is required.
 2. Read `sandbox_limits` for the current plan's allowed CPU, memory, disk,
    timeout, quotas, and current pricing.
 3. Select an immutable template version for reproducible work.
@@ -46,12 +48,26 @@ limits determine CPU/memory choices and plan-managed disk size. On
 `sandbox_quota_exceeded`, inspect the returned quota snapshot before changing
 shape or starting another sandbox.
 
+## Balance errors
+
+Create (including snapshot sources), checkpoint restore, and connect/resume that
+starts a stopped or failed sandbox require a positive wallet balance. A zero or
+negative balance returns `402` with `sandbox_balance_required`; direct the user
+to the correct account's billing view before retrying. This check also applies
+when queued work is dispatched. Connecting to an already running sandbox does
+not start new runtime. Reads, pause/stop, and destroy keep their existing access
+rules. A suspended account still returns `team_billing_suspended` for actions
+blocked by suspension.
+
+Runtime and storage retain their existing metering and prices; this start check
+does not introduce a sandbox reservation or a new charge.
+
 ## Failure-safe skeleton
 
 ```text
 load API key from secret storage
 read live sandbox limits
-resolve team and immutable template version
+resolve team, positive wallet balance, and immutable template version
 create with one idempotency key and bounded lifecycle
 receive usable session or terminal failure
 perform bounded work and retain structured results

@@ -10,7 +10,8 @@ For a guided route, continue through [lifecycle](sandbox-lifecycle.md),
 
 ## Lifecycle
 
-1. Select a team and template version (ID, tag, or latest).
+1. Select a team and template version (ID, tag, or latest), and confirm a positive
+   balance in the account that pays for that team. No saved card is required.
 2. Create with an idempotency key and bounded timeout/lifecycle.
 3. Wait for create/connect to return a usable session or terminal failure.
 4. Perform commands, file, Git, or network work through the data-plane session.

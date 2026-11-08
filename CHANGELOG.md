@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.3
+
+- Document the positive wallet balance required before sandbox creation,
+  checkpoint restore, and restarting stopped runtime, without a saved-card gate.
+- Explain `sandbox_balance_required` and preserve existing sandbox runtime and
+  storage pricing, metering, and cleanup behavior.
+
 ## 1.2.2
 
 - Document paid app builds at €0.50/hour with 8 vCPU and 15 GiB limits, charged

@@ -111,6 +111,11 @@ for actual running time; queue time and image-only promotions are free of build
 charges. No saved card is required; Stripe top-ups start at €5. See the
 [billing guide](https://docs.watasu.io/admin/billing-and-limits/).
 
+Before creating a sandbox, restoring a checkpoint into a new sandbox, or
+resuming a stopped sandbox, its billing account must have a balance greater than
+zero. No saved card is required. Sandbox runtime and storage keep their existing
+rates. See [sandbox billing](https://docs.watasu.io/sandboxes/billing/).
+
 Report whether installation succeeded and tell the user:
 
 > Restart your agent to load Watasu, then sign in to Watasu when the

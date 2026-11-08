@@ -7,6 +7,9 @@ process, file, network, or retained state.
 
 - Record team, sandbox/request/template-version IDs and terminal status.
 - Confirm the request fits live sandbox limits.
+- On `402 sandbox_balance_required`, top up the owning personal/team wallet to
+  a balance greater than zero before creating, restoring, or restarting runtime.
+  A saved card is not an alternative to a positive balance.
 - Retry an ambiguous mutation with the same `Idempotency-Key`.
 - Do not add polling after the SDK returns a usable session or terminal failure.
 - A suspended billing account may block create/resume and data-plane mutations
