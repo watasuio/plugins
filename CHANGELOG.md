@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.2
+
+- Document paid app builds at €0.50/hour with 8 vCPU and 15 GiB limits, charged
+  per running second, including failed and canceled builds.
+- Explain prepaid reservations, unused-fund refunds, balance checks across
+  manual and automatic build triggers, and free image-only promotions.
+- Add build-funding prerequisites to agent setup and first-deploy guidance.
+
 ## 1.2.0
 
 - Add hosted MCP write-tool workflows using the existing `read` and `write` scopes.

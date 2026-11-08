@@ -8,6 +8,7 @@ responses contain credentials; consume them in code without printing them.
 | Response or symptom | Customer action |
 | --- | --- |
 | 401 | Reauthenticate; verify credential expiry/revocation without displaying it |
+| 402 on an app build | Check the app's billing account and available funds; resolve the balance or suspension before retrying |
 | 403 | Verify team scope, app permissions, and any required billing state |
 | 404 / missing resource | Check exact ID/name and visibility; do not infer global absence |
 | 422 | Read structured validation details; correct shape or inspect returned quota |

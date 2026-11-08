@@ -3,6 +3,35 @@
 A build converts a source revision into an immutable runnable image. It does not
 apply runtime config or prove a process can become healthy.
 
+## Build pricing and balance
+
+App builds cost **€0.50/hour**, billed per actual running second, with limits of
+**8 vCPU and 15 GiB memory**. Failed and canceled builds still charge for the time
+the builder ran. Queueing, scheduling, and image pulling before the builder
+starts are free. Promoting an existing image through a pipeline does not run or
+charge for another build; deployed processes and other resources retain their
+own charges.
+
+Before a manual build, Git push, connected GitHub deploy, pipeline source build,
+or review-app build, check the app's billing account in the dashboard. It needs
+a positive available balance sufficient for at least one second. Zero or
+insufficient balance blocks build work before source fetching; a successful
+GitHub check alone does not guarantee a build starts. Personal teams use their
+owner's billing account; shared teams use their team account. A saved payment
+card is not required. Stripe top-ups have a **€5 minimum**.
+
+Before starting a builder, Watasu reserves up to **€0.50** from available funds
+for at most one hour. A smaller balance funds a shorter execution deadline.
+Concurrent builds each reserve their own funds, so money held for one build is
+not available to another build or resource. The dashboard distinguishes the
+reserved amount from the final charge. When the builder stops, only its actual
+running time is charged and the unused reservation is refunded. The hold is not
+a one-hour minimum charge. Retries share the original one-hour execution limit.
+
+Use the customer's dashboard top-up flow when needed; do not repeatedly retry
+an unfunded build. See [billing](teams-access-and-billing.md) and the current
+[public billing guide](https://docs.watasu.io/admin/billing-and-limits/).
+
 ## Builder selection
 
 Watasu chooses from repository root:

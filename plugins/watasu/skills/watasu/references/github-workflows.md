@@ -10,6 +10,11 @@ The connection, pipeline promotions, and review-app settings are customer
 dashboard operations. CLI/MCP-only clients should prepare repository changes and
 report the required dashboard step; MCP can verify build/release state afterwards.
 
+Automatic and manual GitHub builds use the same
+[paid-build balance check](builds-and-buildpacks.md#build-pricing-and-balance).
+An unfunded account does not start build work, even after a passing check or
+push. Check available balance as well as GitHub status before retrying.
+
 Before diagnosing an automatic deploy, identify:
 
 - repository and branch;
@@ -27,6 +32,10 @@ A pipeline orders apps into stages. Promotion reuses the already-built artifact
 instead of rebuilding from source. This makes the image identity the invariant
 between stages while each app retains its own config, formation, add-ons, access,
 and domains.
+
+Image-only promotion has no build charge. A pipeline action that builds new
+source, including a review-app build, needs available funds and incurs the
+normal per-second build charge. Runtime and add-on charges remain separate.
 
 Before promotion, establish source app/release and destination stage. Treat a
 production promotion as a deployment mutation and obtain the user's intent.

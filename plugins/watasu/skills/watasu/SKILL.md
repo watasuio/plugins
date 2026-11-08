@@ -76,6 +76,9 @@ track when the user is learning the platform; use the task map for focused work.
 - For application deploys, preserve the normal Watasu contract: a root
   `Dockerfile` wins over buildpacks, and a root `Procfile` defines runtime
   process commands.
+- App builds are paid. Before triggering one, check the billing account's
+  available balance and follow [build pricing and reservations](references/builds-and-buildpacks.md#build-pricing-and-balance).
+  Zero balance blocks new builds, including automatic GitHub builds.
 - Routed applications must listen on `0.0.0.0:$PORT`. Metrics use the separate
   add-on-managed `METRICS_PORT`; workers do not need to listen on `PORT`.
 - Do not reveal config values, credentials, connection strings, API keys,

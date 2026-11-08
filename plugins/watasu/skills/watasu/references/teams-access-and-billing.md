@@ -50,7 +50,7 @@ to receive deploy-failure notifications.
 
 ## Plans and billing
 
-Billing can include app process usage, dynamic pod usage, managed add-ons,
+Billing can include app builds, app process usage, dynamic pod usage, managed add-ons,
 sandbox runtime/storage, templates, checkpoints, volumes, and data transfer.
 Plan names, included quotas, prices, and limits change over time. Consult the
 live dashboard and current docs before quoting or comparing them.
@@ -60,6 +60,15 @@ in the dashboard; MCP does not expose billing. Suspension can block deployments
 and sandbox work. Use the customer's top-up flow to resolve a balance issue,
 never an administrator credit or backend-console procedure. Payment, automatic
 top-up, plan changes, and account deletion require explicit user intent.
+
+App builds cost €0.50/hour with 8 vCPU and 15 GiB limits, billed per running
+second, including failed or canceled builds. A positive available balance must
+cover at least one second before build work starts. No saved card is required;
+Stripe top-ups start at €5. Each builder reserves up to €0.50 or the available
+funds for a shorter deadline, then refunds unused funds after it stops. Queue
+time and image-only pipeline promotions have no build charge. See
+[build pricing and reservations](builds-and-buildpacks.md#build-pricing-and-balance)
+for billing ownership, concurrent builds, and the one-hour execution limit.
 
 Durable guidance:
 

@@ -8,6 +8,9 @@ chapters cover [build selection](builds-and-buildpacks.md),
 
 ## First deploy
 
+Before pushing source, check the app's billing account: app builds are paid and
+require available funds. See [build pricing and reservations](builds-and-buildpacks.md#build-pricing-and-balance).
+
 ```sh
 watasu login
 watasu create --team <team> <app>
