@@ -103,7 +103,7 @@ unavailable, ask the user to update Pi; no MCP adapter is needed.
 ## Finish
 
 App deployments use paid builds: **€0.50/hour**, billed per running second with
-8 vCPU and 15 GiB limits. Before a later deployment, the app's billing account
+16 vCPU and 30 GiB limits. Before a later deployment, the app's billing account
 must have a positive available balance sufficient for at least one second.
 A build reserves up to €0.50, or available funds for a shorter deadline, then
 refunds unused funds after the builder stops. Failed or canceled builds charge

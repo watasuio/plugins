@@ -6,7 +6,7 @@ apply runtime config or prove a process can become healthy.
 ## Build pricing and balance
 
 App builds cost **€0.50/hour**, billed per actual running second, with limits of
-**8 vCPU and 15 GiB memory**. Failed and canceled builds still charge for the time
+**16 vCPU and 30 GiB memory**. Failed and canceled builds still charge for the time
 the builder ran. Queueing, scheduling, and image pulling before the builder
 starts are free. Promoting an existing image through a pipeline does not run or
 charge for another build; deployed processes and other resources retain their

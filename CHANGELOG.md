@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.5
+
+- Increase app-build limits to 16 vCPU and 30 GiB, keeping the 60-minute cap
+  and €0.50/hour rate billed by actual running seconds.
+
 ## 1.2.4
 
 - Document positive balance admission for all add-ons, including free plans,
