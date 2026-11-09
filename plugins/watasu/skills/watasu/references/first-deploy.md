@@ -42,10 +42,10 @@ does not enter the build phase; see [configuration and secrets](config-and-secre
 
 ## 4. Deploy
 
-App builds are paid at €0.50/hour, billed per running second with 16 vCPU and
+App builds are paid at €0.25/hour, billed per running second with 16 vCPU and
 30 GiB limits. Check that the app's billing account has a positive available
 balance sufficient for at least one second before pushing. Watasu reserves up
-to €0.50, or less for a shorter funded deadline, and refunds unused funds after
+to €0.25, or less for a shorter funded deadline, and refunds unused funds after
 the builder stops. A saved card is not required; Stripe top-ups start at €5.
 See [build billing](builds-and-buildpacks.md#build-pricing-and-balance).
 

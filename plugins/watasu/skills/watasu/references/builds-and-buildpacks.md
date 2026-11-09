@@ -5,7 +5,7 @@ apply runtime config or prove a process can become healthy.
 
 ## Build pricing and balance
 
-App builds cost **€0.50/hour**, billed per actual running second, with limits of
+App builds cost **€0.25/hour**, billed per actual running second, with limits of
 **16 vCPU and 30 GiB memory**. Failed and canceled builds still charge for the time
 the builder ran. Queueing, scheduling, and image pulling before the builder
 starts are free. Promoting an existing image through a pipeline does not run or
@@ -20,7 +20,7 @@ GitHub check alone does not guarantee a build starts. Personal teams use their
 owner's billing account; shared teams use their team account. A saved payment
 card is not required. Stripe top-ups have a **€5 minimum**.
 
-Before starting a builder, Watasu reserves up to **€0.50** from available funds
+Before starting a builder, Watasu reserves up to **€0.25** from available funds
 for at most one hour. A smaller balance funds a shorter execution deadline.
 Concurrent builds each reserve their own funds, so money held for one build is
 not available to another build or resource. The dashboard distinguishes the

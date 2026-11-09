@@ -61,10 +61,10 @@ and sandbox work. Use the customer's top-up flow to resolve a balance issue,
 never an administrator credit or backend-console procedure. Payment, automatic
 top-up, plan changes, and account deletion require explicit user intent.
 
-App builds cost €0.50/hour with 16 vCPU and 30 GiB limits, billed per running
+App builds cost €0.25/hour with 16 vCPU and 30 GiB limits, billed per running
 second, including failed or canceled builds. A positive available balance must
 cover at least one second before build work starts. No saved card is required;
-Stripe top-ups start at €5. Each builder reserves up to €0.50 or the available
+Stripe top-ups start at €5. Each builder reserves up to €0.25 or the available
 funds for a shorter deadline, then refunds unused funds after it stops. Queue
 time and image-only pipeline promotions have no build charge. See
 [build pricing and reservations](builds-and-buildpacks.md#build-pricing-and-balance)

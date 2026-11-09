@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.7
+
+- Lower app-build pricing to €0.25/hour, billed per running second, with the
+  existing 16 vCPU, 30 GiB, and 60-minute limits.
+
 ## 1.2.6
 
 - Align the billing reference with the 16 vCPU and 30 GiB app-build limits.

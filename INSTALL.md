@@ -102,10 +102,10 @@ unavailable, ask the user to update Pi; no MCP adapter is needed.
 
 ## Finish
 
-App deployments use paid builds: **€0.50/hour**, billed per running second with
+App deployments use paid builds: **€0.25/hour**, billed per running second with
 16 vCPU and 30 GiB limits. Before a later deployment, the app's billing account
 must have a positive available balance sufficient for at least one second.
-A build reserves up to €0.50, or available funds for a shorter deadline, then
+A build reserves up to €0.25, or available funds for a shorter deadline, then
 refunds unused funds after the builder stops. Failed or canceled builds charge
 for actual running time; queue time and image-only promotions are free of build
 charges. No saved card is required; Stripe top-ups start at €5. See the
