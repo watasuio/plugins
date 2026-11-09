@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.6
+
+- Align the billing reference with the 16 vCPU and 30 GiB app-build limits.
+
 ## 1.2.5
 
 - Increase app-build limits to 16 vCPU and 30 GiB, keeping the 60-minute cap

@@ -61,7 +61,7 @@ and sandbox work. Use the customer's top-up flow to resolve a balance issue,
 never an administrator credit or backend-console procedure. Payment, automatic
 top-up, plan changes, and account deletion require explicit user intent.
 
-App builds cost €0.50/hour with 8 vCPU and 15 GiB limits, billed per running
+App builds cost €0.50/hour with 16 vCPU and 30 GiB limits, billed per running
 second, including failed or canceled builds. A positive available balance must
 cover at least one second before build work starts. No saved card is required;
 Stripe top-ups start at €5. Each builder reserves up to €0.50 or the available
